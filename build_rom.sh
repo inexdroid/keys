@@ -12,9 +12,9 @@ export TZ=Asia/Jakarta
 
 #cd /crave-devspaces/vos
 
-rm -rf .repo/local_manifests; \
+crave run --no-patch -- "rm -rf .repo/local_manifests; \
 repo init -u https://github.com/VoltageOS/manifest.git -b 16.2 --git-lfs; \
 git clone --depth=1 https://github.com/Tiktodz/local_manifesf -b vos .repo/local_manifests; \
 /opt/crave/resync.sh; \
 . build/envsetup.sh; \
-brunch X00TD
+brunch X00TD"
