@@ -1,8 +1,8 @@
 #!/bin/bash
 
-sign_target_files_apks -o -d vendor/afterlife-priv/keys \
-    $OUT/obj/PACKAGING/target_files_intermediates/*-target_files.zip \
-    signed-target_files.zip
+#sign_target_files_apks -o -d vendor/afterlife-priv/keys \
+#    $OUT/obj/PACKAGING/target_files_intermediates/*-target_files.zip \
+#    signed-target_files.zip
 
 sign_target_files_apks -o -d vendor/afterlife-priv/keys \
     --extra_apks com.android.appsearch.apk.apk=$HOME/xotot/vendor/afterlife-priv/keys/releasekey \
