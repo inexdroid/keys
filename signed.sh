@@ -161,7 +161,7 @@ sign_target_files_apks -o -d vendor/afterlife-priv/keys \
     --extra_apex_payload_key com.google.pixel.camera.hal.apex=$HOME/xotot/vendor/afterlife-priv/keys/com.google.pixel.camera.hal.pem \
     --extra_apex_payload_key com.google.pixel.vibrator.hal.apex=$HOME/xotot/vendor/afterlife-priv/keys/com.google.pixel.vibrator.hal.pem \
     --extra_apex_payload_key com.qorvo.uwb.apex=$HOME/xotot/vendor/afterlife-priv/keys/com.qorvo.uwb.pem \
-    $OUT/obj/PACKAGING/target_files_intermediates/*-target_files*.zip \
+    $OUT/obj/PACKAGING/target_files_intermediates/*-target_files.zip \
     signed-target_files.zip
 
 ota_from_target_files -k vendor/afterlife-priv/keys/releasekey \
